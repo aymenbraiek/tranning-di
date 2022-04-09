@@ -3,15 +3,15 @@ package com.springframework.di.tranningdi.service;
 import org.springframework.stereotype.Service;
 
 @Service
-public class GreetingServiceImpl implements  GreetingService{
+public class ConstructorInjectedGreetingService  implements GreetingService{
     @Override
     public String sayGretting() {
-        System.out.println("hello Di");
-        return  " hello amine";
+        System.out.println("injected by constructor ");
+        return "hello ";
     }
 
     @Override
     public String getProductById() {
-        return "hello amine";
+        return null;
     }
 }
